@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navImg {
+    width: 6vw;
+}
+
+.divNavImg {
+    margin-left: 60px;
+}
+
+.divImgCiudades {
+    height: 65vh;
+}
+
+.divImageCover {
+    height: 65vh;
+    width: 102%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.divImageCover1 {
+    background-color: rgba(0, 0, 0, .5);
+    height: 65vh;
+    z-index: 0;
+}
+
+.divImageCover2 {
+    height: 35vh;
+    margin-top: 300px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.textDescription {
+    width: 38%;
+}
+
+.altoDelParrafoCarsOradores {
+    height: 15vh;
+}
+
+footer {
+    background: #1c3846;
+    background: linear-gradient(90deg, #1c3846 0%, #1d5271 80%);
+    background: -webkit-linear-gradient(90deg, #1c3846 0%, #1d5271 80%);
+    background: -moz-linear-gradient(90deg, #1c3846 0%, #1d5271 80%);
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (min-width:768px){
+    .listas{
+        display: flex;
+        flex-direction: column;
+    }
+}
