@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+.row {
+    margin-right: 0 !important;
+}
+
 .navImg {
     width: 6vw;
 }
@@ -17,25 +21,23 @@ body {
 
 .divImageCover {
     height: 65vh;
-    width: 102%;
+    width: 99vw;
     background-size: cover;
     z-index: -1;
 }
 
-.divImageCover1 {
-    background-color: rgba(0, 0, 0, .5);
-    height: 65vh;
-    z-index: 0;
-}
-
 .divImageCover2 {
-    height: 35vh;
-    margin-top: 300px;
+    z-index: 0;
+    height: 65vh;
+    margin-top: 0vh;
     padding-right: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: flex-end;
+    box-shadow: 35px 21px 400px 200px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 35px 21px 400px 200px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 35px 21px 400px 200px rgba(0, 0, 0, 0.5) inset;
 }
 
 .textDescription {
@@ -57,10 +59,24 @@ footer {
 li {
     list-style: none;
 }
+li:hover {
+    color: black;
+}
 
-@media screen and (min-width:768px){
-    .listas{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width:768px) {
+    .textDescription {
+        width: 100%;
+    }
+
+    .divImageCover{
+        width: 100vw;
+    }
+
+    .divImageCover2 {
+        margin: 103vw !important;
+        padding-right: 15px;
+    }
+    .row {
+        max-width: 65%;
     }
 }
