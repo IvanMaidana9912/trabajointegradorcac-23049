@@ -48,6 +48,10 @@ body {
     height: 15vh;
 }
 
+.cardList {
+    width: 18rem;
+}
+
 footer {
     background: #1c3846;
     background: linear-gradient(90deg, #1c3846 0%, #1d5271 80%);
@@ -59,24 +63,51 @@ footer {
 li {
     list-style: none;
 }
+
 li:hover {
     color: black;
 }
 
 @media screen and (max-width:768px) {
+    #navbarTogglerDemo01 {
+        display: flex !important;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+
+    a{
+        display: flex;
+    }
     .textDescription {
         width: 100%;
     }
 
-    .divImageCover{
+    .divImageCover {
         width: 100vw;
+        display: flex;
+        position: absolute;
+        object-fit: cover;
     }
 
     .divImageCover2 {
-        margin: 103vw !important;
         padding-right: 15px;
+        padding-right: 15px;
+        z-index: 1;
+        display: flex;
+        position: absolute;
+        align-items: center;
     }
-    .row {
-        max-width: 65%;
+
+    .d-flex {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .listas {
+        flex-wrap: wrap;
+    }
+
+    .cardList {
+        width: 100%;
     }
 }
