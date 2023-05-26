@@ -1,5 +1,6 @@
 .listaprecios:hover{
     border-color: rgba(226, 198, 43, 0.849) !important;
+    background-color: #dbdbdb;
 }
 
 .form {

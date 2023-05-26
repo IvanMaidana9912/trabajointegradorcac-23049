@@ -84,7 +84,7 @@
 
 
 
-        <section class="mt-4 form">
+        <form class="mt-4 form">
             <div class="text-center">
                 <p>VENTA</p>
                 <p class="fs-1"><b>VALOR DE TICKET $200</b></p>
@@ -92,28 +92,28 @@
             <div>
                 <div class="d-flex mb-3">
                     <div class="w-50">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                        <input type="text" id="inputNombre" required class="form-control" placeholder="Nombre">
                     </div>
                     <div class="w-50 ms-2">
-                        <input type="text" class="form-control" placeholder="Apellido">
+                        <input type="text" id="inputApellido" required class="form-control" placeholder="Apellido">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Correo">
+                    <input type="email" id="inputEmail" required class="form-control" placeholder="Correo">
                 </div>
                 <div class="d-flex mb-3">
                     <div class="w-50">
                         <label for="labelCantidad" class="form-label">Cantidad</label>
-                        <input type="number" id="labelCantidad" class="form-control" value="0">
+                        <input type="number" id="inputCantidadTicket" required id="labelCantidad" class="form-control"
+                            value="0">
                     </div>
                     <div class="w-50 ms-2">
                         <label for="exampleDataList" class="form-label">Categoria</label>
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Estudiante">
-                        <datalist id="datalistOptions">
-                            <option value="Estudiante">
-                            <option value="Treinee">
-                            <option value="Junior">
-                        </datalist>
+                        <select name="exampleDataList" class="form-control" id="inputList">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Treinee">Treinee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
                     </div>
                 </div>
                 <div class="d-flex p-3 mb-3 bg-info rounded">
@@ -121,20 +121,16 @@
                 </div>
                 <div class="d-flex">
                     <div class="w-50">
-                        <input type="button" value="Borrar" class="btn btn-danger w-100">
+                        <input type="button" required value="Borrar" id="buttonDelete" class="btn btn-danger w-100">
                     </div>
                     <div class="w-50 ms-3">
-                        <input type="button" value="Resumen" class="btn btn-success w-100">
+                        <input type="button" required value="Resumen" id="buttonSuccess" class="btn btn-success w-100">
                     </div>
                 </div>
             </div>
             <div>
-                
             </div>
-        </section>
-
-
-
+        </form>
     </main>
     <footer class="col mt-5 mb-2">
         <div class="row">
