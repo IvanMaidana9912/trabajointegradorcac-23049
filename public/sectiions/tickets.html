@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <body>
         <header class="conteiner">
             <nav class="row  navbar navbar-expand bg-dark pb-3 pt-3 ">
@@ -32,16 +33,19 @@
 
                     <ul class="col nav d-flex align-items-center flex-row justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link text-light fs-5 active" aria-current="page" href="../../index.html">La conferencia</a>
+                            <a class="nav-link text-light fs-5 active" aria-current="page" href="../../index.html">La
+                                conferencia</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white-50 fs-5" href="../../index.html#ORADORES">Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50 fs-5" href="../../index.html#FECHAYLUGAR">El lugar y la fecha</a>
+                            <a class="nav-link text-white-50 fs-5" href="../../index.html#FECHAYLUGAR">El lugar y la
+                                fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50 fs-5" href="../../index.html#SEORADOR">Conviértete en orador</a>
+                            <a class="nav-link text-white-50 fs-5" href="../../index.html#SEORADOR">Conviértete en
+                                orador</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-success fs-5 me-5" href="#">Comprar
@@ -52,7 +56,85 @@
             </nav>
     </body>
     <main>
-        <h1 style="height: 100vh;"> Vamos a ver que resulta</h1>
+        <section class="mt-5">
+            <div class="d-flex justify-content-center">
+                <div class="p-4 border-2 border border-primary rounded text-center listaprecios">
+                    <p class="fs-4"><b>Estudiante</b></p>
+                    </p>
+                    <p>Tienen un descuento</p>
+                    <p class="fs-4"><b>80%</b></p>
+                    <p class="text-muted">* presentar documentación.</p>
+                </div>
+                <div class="p-4 border-2 border border-primary rounded text-center mx-4 listaprecios">
+                    <p class="fs-4"><b>Treinee</b></p>
+                    </p>
+                    <p>Tienen un descuento</p>
+                    <p class="fs-4"><b>50%</b></p>
+                    <p class="text-muted">* presentar documentación.</p>
+                </div>
+                <div class="p-4 border-2 border border-primary rounded text-center listaprecios">
+                    <p class="fs-4"><b>Junior</b></p>
+                    </p>
+                    <p>Tienen un descuento</p>
+                    <p class="fs-4"><b>15%</b></p>
+                    <p class="text-muted">* presentar documentación.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="mt-4 form">
+            <div class="text-center">
+                <p>VENTA</p>
+                <p class="fs-1"><b>VALOR DE TICKET $200</b></p>
+            </div>
+            <div>
+                <div class="d-flex mb-3">
+                    <div class="w-50">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="w-50 ms-2">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Correo">
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="w-50">
+                        <label for="labelCantidad" class="form-label">Cantidad</label>
+                        <input type="number" id="labelCantidad" class="form-control" value="0">
+                    </div>
+                    <div class="w-50 ms-2">
+                        <label for="exampleDataList" class="form-label">Categoria</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Estudiante">
+                        <datalist id="datalistOptions">
+                            <option value="Estudiante">
+                            <option value="Treinee">
+                            <option value="Junior">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="d-flex p-3 mb-3 bg-info rounded">
+                    <p class="d-flex align-items-center mb-0">Total a Pagar: $ <span id="totalAPagar"></span></p>
+                </div>
+                <div class="d-flex">
+                    <div class="w-50">
+                        <input type="button" value="Borrar" class="btn btn-danger w-100">
+                    </div>
+                    <div class="w-50 ms-3">
+                        <input type="button" value="Resumen" class="btn btn-success w-100">
+                    </div>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </section>
+
+
+
     </main>
     <footer class="col mt-5 mb-2">
         <div class="row">
@@ -72,4 +154,5 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d82d4468f0.js" crossorigin="anonymous"></script>
     <script src="../../js/sectionTickets.js"></script>
+
 </html>
