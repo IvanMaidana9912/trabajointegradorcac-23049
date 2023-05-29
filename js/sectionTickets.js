@@ -1,7 +1,5 @@
 console.log("Hi! it's my integrationwork of the program of \"Codo A Codo 4.0\".");
 
-const buttonSuccess = document.querySelector("#buttonSuccess");
-buttonSuccess.addEventListener("click", buttonSuccessF);
 const categoria1 = document.querySelector("#categoria1");
 categoria1.addEventListener("click", fCategoria1);
 const categoria2 = document.querySelector("#categoria2");
@@ -15,6 +13,11 @@ const inputCantidadTicket = document.querySelector("#inputCantidadTicket");
 const inputList = document.querySelector("#inputList");
 const totalAPagar = document.querySelector("#totalAPagar");
 
+const buttonSuccess = document.querySelector("#buttonSuccess");
+buttonSuccess.addEventListener("click", buttonSuccessF);
+const buttonDelete = document.querySelector("#buttonDelete");
+buttonDelete.addEventListener("click", () => totalAPagar.innerHTML = "");
+
 const DescuentoEstudiante = 0.8;
 const DescuentoTrainee = 0.5;
 const DescuentoJunior = 0.15;
@@ -26,25 +29,26 @@ function buttonSuccessF () {
     let email = inputEmail.value;
     let tickets = inputCantidadTicket.value;
     let list = inputList.value;
+    let valorTotal = valorTicket * inputCantidadTicket.value;
     console.log(`${nombre}, ${apellido}, ${email}, ${tickets}, valor: ${list}`);
     let valorConDescuento;
     if (inputList.value == "Estudiante") {
-        valorConDescuento = valorTicket * DescuentoEstudiante * inputCantidadTicket.value;
+        valorConDescuento = valorTotal * DescuentoEstudiante;
         totalAPagar.innerHTML = valorConDescuento;
     }else if (inputList.value == "Trainee"){
-        valorConDescuento = valorTicket * DescuentoTrainee * inputCantidadTicket.value;
+        valorConDescuento = valorTotal * DescuentoTrainee;
         totalAPagar.innerHTML = valorConDescuento;
     }else if (inputList.value == "Junior"){
-        valorConDescuento = valorTicket * DescuentoJunior * inputCantidadTicket.value;
+        valorConDescuento = valorTotal * DescuentoJunior;
         totalAPagar.innerHTML = valorConDescuento;
     }else {
-        alert("ERROR")
-    }
+        alert("ERROR");
+    };
 };
 
 function fCategoria1 () {
     console.log("este es categoria Estudiante");
-    inputList.value == "Estudiante";
+    inputList.setAttribute("value", "Estudiante");
 };
 
 function fCategoria2 () {
