@@ -58,21 +58,21 @@
     <main>
         <section class="mt-5">
             <div class="d-flex justify-content-center">
-                <div class="p-4 border-2 border border-primary rounded text-center listaprecios">
+                <div class="p-4 border-2 border border-primary rounded text-center listaprecios" id="categoria1">
                     <p class="fs-4"><b>Estudiante</b></p>
                     </p>
                     <p>Tienen un descuento</p>
                     <p class="fs-4"><b>80%</b></p>
                     <p class="text-muted">* presentar documentación.</p>
                 </div>
-                <div class="p-4 border-2 border border-primary rounded text-center mx-4 listaprecios">
+                <div class="p-4 border-2 border border-primary rounded text-center mx-4 listaprecios" id="categoria2">
                     <p class="fs-4"><b>Treinee</b></p>
                     </p>
                     <p>Tienen un descuento</p>
                     <p class="fs-4"><b>50%</b></p>
                     <p class="text-muted">* presentar documentación.</p>
                 </div>
-                <div class="p-4 border-2 border border-primary rounded text-center listaprecios">
+                <div class="p-4 border-2 border border-primary rounded text-center listaprecios" id="categoria3">
                     <p class="fs-4"><b>Junior</b></p>
                     </p>
                     <p>Tienen un descuento</p>
@@ -110,9 +110,9 @@
                     <div class="w-50 ms-2">
                         <label for="exampleDataList" class="form-label">Categoria</label>
                         <select name="exampleDataList" class="form-control" id="inputList">
-                            <option value="Estudiante">Estudiante</option>
-                            <option value="Treinee">Treinee</option>
-                            <option value="Junior">Junior</option>
+                            <option id="option1" value="Estudiante">Estudiante</option>
+                            <option id="option2" value="Trainee">Treinee</option>
+                            <option id="option3" value="Junior">Junior</option>
                         </select>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="d-flex">
                     <div class="w-50">
-                        <input type="button" required value="Borrar" id="buttonDelete" class="btn btn-danger w-100">
+                        <input type="reset" required value="Borrar" class="btn btn-danger w-100">
                     </div>
                     <div class="w-50 ms-3">
                         <input type="button" required value="Resumen" id="buttonSuccess" class="btn btn-success w-100">
